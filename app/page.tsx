@@ -918,13 +918,19 @@ export default function Home() {
               <h3 className="font-bold text-gray-800 mb-2 group-hover:text-indigo-600 transition-colors">术语词典</h3>
               <p className="text-sm text-gray-600">专业术语解释，系统化学习基础知识</p>
             </a>
-            <a href="/ai-assistant" className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 group border-2 border-amber-200 relative">
-              <div className="absolute -top-2 -right-2 bg-gradient-to-r from-amber-500 to-orange-500 text-white text-xs px-2 py-1 rounded-full">
-                AI智能
+            <a href="/ai-interactive" className="bg-gradient-to-r from-blue-600 to-indigo-600 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 group text-white relative lg:col-span-2">
+              <div className="absolute -top-2 -right-2 bg-gradient-to-r from-yellow-400 to-orange-400 text-gray-800 text-xs px-3 py-1 rounded-full font-bold">
+                🔥 全新升级
               </div>
-              <div className="text-3xl mb-3 text-amber-600">🤖</div>
-              <h3 className="font-bold text-gray-800 mb-2 group-hover:text-amber-600 transition-colors">AI助手</h3>
-              <p className="text-sm text-gray-600">智能问答解答，实时辅导学习难题</p>
+              <div className="text-4xl mb-3">🤖</div>
+              <h3 className="font-bold text-white mb-2 text-lg">AI智能助手</h3>
+              <p className="text-sm text-blue-100 mb-3">专业AI对话伙伴，支持各类智能问答</p>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-xs bg-white/20 px-2 py-1 rounded-full">💬 智能对话</span>
+                <span className="text-xs bg-white/20 px-2 py-1 rounded-full">📚 学习辅导</span>
+                <span className="text-xs bg-white/20 px-2 py-1 rounded-full">💼 工作协助</span>
+                <span className="text-xs bg-white/20 px-2 py-1 rounded-full">🎯 创意灵感</span>
+              </div>
             </a>
             <a href="/notes" className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-all hover:-translate-y-1 group">
               <div className="text-3xl mb-3 text-pink-600">📓</div>
