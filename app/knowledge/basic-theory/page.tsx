@@ -138,7 +138,7 @@ export default function BasicTheory() {
     }
   };
 
-  const currentContent = content[selectedSection];
+  const currentContent = content[selectedSection as keyof typeof content];
 
   return (
     <div className="max-w-4xl mx-auto">

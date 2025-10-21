@@ -73,7 +73,7 @@ export default function ChartTool() {
 
     const newChartData: { [key: string]: any } = {};
     rotatedGongs.forEach((gong, index) => {
-      newChartData[gong] = baseData[gongNames[index]];
+      newChartData[gong] = baseData[gongNames[index] as keyof typeof baseData];
     });
 
     return newChartData;
@@ -118,7 +118,7 @@ export default function ChartTool() {
 
     // 吉门分析
     const goodDoors = Object.entries(data).filter(([_, val]) =>
-      ['休门', '生门', '景门', '开门'].includes(val.men)
+      ['休门', '生门', '景门', '开门'].includes((val as any).men)
     );
     if (goodDoors.length > 0) {
       analysisPoints.push(`格局中有${goodDoors.length}个吉门，整体运势较好。`);
